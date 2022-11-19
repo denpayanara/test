@@ -24,7 +24,7 @@ Rakuten_4G = {
 def musen_api(d):
 
     parm = urllib.parse.urlencode(d, encoding="shift-jis")
-    r = requests.get("https://www.tele.soumu.go.jp/musen/list", parm)
+    r = requests.get("https://www.tele.soumu.go.jp/musen/list", parm, verify=False)
 
     return r.json()
 
