@@ -16,4 +16,6 @@ jobs:
         python-version: 3.9
     - name: Run script
       run: |
+        apt-get update -y
+        apt-get install -y python-openssl
         python test.py
