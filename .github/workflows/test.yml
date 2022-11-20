@@ -19,7 +19,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
         sudo apt-get update -y
-        sudo apt-get install -y python-openssl
+        # sudo apt-get install -y python-openssl
     - name: Run script
       run: |
         python test.py
